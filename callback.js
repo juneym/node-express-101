@@ -26,12 +26,11 @@ const execP = utils.promisify(exec);
 
 //promise based
 const main = async () => {
-    try  {
-        const {stdout} = await execP('ls /tmp/');         
+        const {stdout} = await execP('ls /tmp/x');         
         console.log(stdout); 
-    } catch(error) {
-        process.exit(1);
-    }
 }
 
-main();
+main().catch((error) => {
+    console.log("Caught some error");
+    console.log(error);
+});
