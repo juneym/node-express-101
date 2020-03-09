@@ -26,7 +26,7 @@ const execP = utils.promisify(exec);
 
 //promise based
 const main = async () => {
-        const {stdout} = await execP('ls /tmp/x');         
+        const {stdout} = await execP('ls /tmp/');         
         console.log(stdout); 
 }
 

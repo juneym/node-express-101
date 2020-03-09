@@ -9,7 +9,9 @@
     "m2": "node --experimental-modules m2.js",
     "http-app-start": "nodemon --experimental-modules server.js",
     "express-app-start": "nodemon --experimental-modules app.js",
-    "callback-start": "nodemon --experimental-modules callback.js"
+    "callback-start": "nodemon --experimental-modules callback.js",
+    "events-start": "nodemon --experimental-modules events.js",
+    "streams-start": "nodemon --experimental-modules streams.js"
   },
   "author": "Raul",
   "license": "ISC",
