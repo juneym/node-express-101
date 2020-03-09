@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "m2": "node --experimental-modules m2.js"
+    "m2": "node --experimental-modules m2.js",
+    "http-app-start": "node --experimental-modules server.js"
   },
   "author": "Raul",
   "license": "ISC",
