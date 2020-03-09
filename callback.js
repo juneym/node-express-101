@@ -1,4 +1,6 @@
+import utils from 'util';
 import {exec} from 'child_process';
+
 
 
 //error first callback pattern
@@ -20,12 +22,16 @@ import {exec} from 'child_process';
 // });
 
 
+const execP = utils.promisify(exec);
+
 //promise based
 const main = async () => {
-    const stdout = await exec('ls /tmp/x'); 
-    //not going to work since exec is not supporting promise
-    console.log(stdout); 
-
+    try  {
+        const {stdout} = await execP('ls /tmp/');         
+        console.log(stdout); 
+    } catch(error) {
+        process.exit(1);
+    }
 }
 
 main();
