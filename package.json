@@ -5,11 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "m2": "node --experimental-modules m2.js"
   },
   "author": "Raul",
   "license": "ISC",
   "dependencies": {
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "express": "github:expressjs/express",
+    "lodash": "^4.17.15",
+    "npm": "^6.14.2"
   }
 }
