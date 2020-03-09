@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "m2": "node --experimental-modules m2.js",
     "http-app-start": "nodemon --experimental-modules server.js",
-    "express-app-start": "nodemon --experimental-modules app.js"
+    "express-app-start": "nodemon --experimental-modules app.js",
+    "callback-start": "nodemon --experimental-modules callback.js"
   },
   "author": "Raul",
   "license": "ISC",
